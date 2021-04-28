@@ -22,5 +22,15 @@ int main(int argc, char const *argv[])
     for (int *p = &arr[0][0]; p <= &arr[row - 1][col - 1]; p++)
         printf("%d ", *p);
 
+    /* FORMULA TO FIND 2D ARRAY ADRESS
+    to find adress a[i][j]:
+            BA + (i * NC + j) * c
+            
+    BA: Base Adress
+    NC: # of columns
+    i : rows
+    j: columns
+    c: size of data type  */
+
     return 0;
 }
